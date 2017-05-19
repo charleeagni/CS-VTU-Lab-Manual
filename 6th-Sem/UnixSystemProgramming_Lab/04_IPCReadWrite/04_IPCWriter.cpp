@@ -21,7 +21,7 @@ int main(int argc, char *argv[]) {
 		return 1;
 	}
 
-  // Optional Block of Code
+  	// Optional Block of Code
 	if (access(argv[1], F_OK) == -1) {
 		if (mkfifo(argv[1], 0777) == -1) {
 			perror("Error during mkfifo");
